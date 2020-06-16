@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = "UTF-8"/>
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+		<script src = "./operacoesJS"></script>
+		<link rel="stylesheet" href="./styleCSS"/>
+		<title> SumUp </title>
+	</head>
+	<body>
+		<h1> CALCULADORA DE TAXAS <br/> SumUp  </h1>
+		<form  class = "calculadora" method = "POST">
+		<h2 class = "venda"> VALOR DA SUA VENDA </h2>
+			<input type = "numeric" class = "borderRecebido" placeholder = "Valor a ser cobrado" id = "venda" /><br/>
+			<select id = "operacao">
+				<option value = "1">Débito</option>
+				<option value = "2">À Vista 1x</option>
+				<option value = "3">Parcelado 2x</option>
+				<option value = "4">Parcelado 3x</option>
+				<option value = "5">Parcelado 4x</option>
+				<option value = "6">Parcelado 5x</option>
+				<option value = "7">Parcelado 6x</option>
+				<option value = "8">Parcelado 7x</option>
+				<option value = "9">Parcelado 8x</option>
+				<option value = "10">Parcelado 9x</option>
+				<option value = "11">Parcelado 10x</option>
+				<option value = "12">Parcelado 11x</option>
+				<option value = "13">Parcelado 12x</option>
+			</select>
+		<h2 class = "recebido"> VALOR A SER RECEBIDO</h2>	
+			<input  class = "inputCompra borderVenda" type = "numeric" placeholder = "Valor a receber"  id = "compra"/><br/>
+			<button  name = "calcular"  class = "backVenda" onclick = "calcularVenda()" type = "submit">CALCULAR VENDA</button>
+			<br/>
+			<button  name = "calcular"  onclick = "calcularCompra()" type = "submit">CALCULAR RECEBIDO</button>
+		</form>
+	</body>
+</html>
