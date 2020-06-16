@@ -13,6 +13,7 @@ const operacoes_controller =  require("../control/operacoes.controller.js");
 
 //rota
 router.post('/index', view_controller.view);
+router.get('/index', view_controller.view);
 router.get('/styleCSS', style_controller.style);
 router.get('/operacoesJS', operacoes_controller.operacoes);
 module.exports = router;  
